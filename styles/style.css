@@ -99,7 +99,7 @@ body main section.linda-img h3 {
   /* 將 h3 設置為絕對定位 */
   top: -15%;
   /* 根據需要調整 */
-  left: 35%;
+  left: 40%;
   /* 根據需要調整 */
   color: white;
   font-size: 2.5rem;
@@ -358,6 +358,10 @@ body footer .toTop-arrow:focus {
   body main section.linda-img {
     height: 40vh;
     width: 40vh;
+  }
+  body main section.linda-img h3 {
+    top: -20%;
+    left: 35%;
   }
   body footer .toTop-arrow {
     width: 2.5rem;

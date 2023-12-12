@@ -112,7 +112,7 @@ body {
                 /* 將 h3 設置為絕對定位 */
                 top: -15%;
                 /* 根據需要調整 */
-                left: 35%;
+                left: 40%;
                 /* 根據需要調整 */
                 color: white;
                 font-size: 2.5rem;
@@ -431,6 +431,11 @@ body {
             section.linda-img {
                 height: 40vh;
                 width: 40vh;
+
+                h3 {
+                    top: -20%;
+                    left: 35%;
+                }
             }
         }
 
