@@ -207,6 +207,50 @@ body main section.info-circles .circles .circle-container p {
   color: black;
   text-align: center;
 }
+body main section.package-details {
+  background-color: white;
+  padding: 2rem;
+  text-align: center;
+}
+body main section.package-details h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+body main section.package-details .package-circles {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+body main section.package-details .package-circles .package-item {
+  width: 300px;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+body main section.package-details .package-circles .package-item .image {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+body main section.package-details .package-circles .package-item h4 {
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  color: #333;
+}
+body main section.package-details .package-circles .package-item h3 {
+  font-size: 1.4rem;
+  color: #f94242;
+  margin-top: 0.5rem;
+}
+body main section.package-details .package-circles .package-item p {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
 body main section.empty-container {
   min-height: 70vh;
   background-color: rgba(0, 0, 0, 0.7);
