@@ -329,7 +329,7 @@ body footer .toTop-arrow:focus {
   outline: none;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 780px) {
   body header {
     position: static;
   }
@@ -349,6 +349,10 @@ body footer .toTop-arrow:focus {
   body main section.number h3 {
     display: flex;
     flex-direction: column;
+  }
+  body main section.linda-img {
+    height: 40vh;
+    width: 40vh;
   }
   body footer .toTop-arrow {
     width: 2.5rem;
