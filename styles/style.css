@@ -257,6 +257,7 @@ body main section.number {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   max-width: 400px;
+  margin: 20px auto;
 }
 body main section.number h3 {
   margin-top: 10px;
@@ -265,9 +266,11 @@ body main section.number h3 {
   font-size: 1.2em;
 }
 body main section.number img {
+  display: block;
   max-width: 100%;
   height: auto;
   border-radius: 5px;
+  margin: 0 auto;
 }
 body footer {
   display: flex;
