@@ -154,8 +154,8 @@ body main section.info-worker .circles .worker {
   align-items: center;
 }
 body main section.info-worker .circles .worker .img-container {
-  width: 250px;
-  height: 250px;
+  width: 220px;
+  height: 220px;
   border-radius: 50%;
   overflow: hidden;
   background-size: cover;
