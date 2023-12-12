@@ -81,7 +81,7 @@ body {
     main {
         section.background-img {
             min-height: 70vh;
-            background-image: url("../images/日本櫻花.jpg");
+            background-image: url("../images/大圖1.jpg");
             background-size: cover;
             background-position: center;
             transition: all 0.75s ease;
@@ -110,66 +110,133 @@ body {
         }
 
         section.linda-img {
-            height: 70vh;
-            width: 90vh;
+            margin-top: 5rem;
+            margin-bottom: 2rem;
+            height: 60vh;
+            /* 保持原來的高度 */
+            width: 60vh;
+            /* 寬度設為與高度相同，形成正方形 */
             background-image: url("../images/linda.jpg");
             background-size: cover;
             background-position: center;
-            // transition: all 0.75s ease;
             position: relative;
             z-index: 0;
 
             display: flex;
-            justify-content: center;
-            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 50%;
+            /* 使其成為圓形 */
 
             div.filter {
                 background-color: rgba(0, 0, 0, 0.3);
                 width: 100%;
-                min-height: 70vh;
+                height: 100%;
+                /* 調整為與外層容器相同的高度 */
                 position: absolute;
                 top: 0;
                 left: 0;
                 z-index: -1;
+                border-radius: 50%;
+                /* 同樣使其成為圓形 */
             }
 
             h3 {
+                position: absolute;
+                /* 將 h3 設置為絕對定位 */
+                top: -15%;
+                /* 根據需要調整 */
+                left: 35%;
+                /* 根據需要調整 */
                 color: white;
                 font-size: 2.5rem;
                 text-align: center;
             }
         }
 
-        section.info-circles {
-            background-color: white;
+        section.info-worker {
+            background-color: rgb(249, 215, 215);
             padding: 2rem 1rem;
+            text-align: center;
 
             h3 {
-                text-align: center;
                 font-size: 2rem;
+                margin-bottom: 1rem;
             }
 
-            div.circles {
+            .circles {
                 display: flex;
-                flex-wrap: wrap;
                 justify-content: center;
+                flex-wrap: wrap;
+                gap: 1rem;
 
-                div.circle {
-                    padding: 1rem;
-                    flex: 0 1 250px;
+                .worker {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
 
-                    img {
-                        width: 80%;
+                    .img-container {
+                        width: 250px;
+                        height: 250px;
                         border-radius: 50%;
+                        overflow: hidden;
+                        background-size: cover;
+                        margin-bottom: 0.5rem; // 留出空間給文字
                         transition: all 0.1s ease-in;
                         padding: 0.3rem;
 
                         &:hover {
                             border: 3px solid $themeColor;
                         }
+                    }
+
+                    p {
+                        font-size: 1.2rem;
+                        color: black;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        section.info-circles {
+            background-color: rgb(241, 204, 204);
+            padding: 2rem 1rem;
+            text-align: center;
+
+            h3 {
+                font-size: 2rem;
+                margin-bottom: 1rem;
+            }
+
+            .circles {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 1rem;
+
+                .circle-container {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .circle {
+                        width: 200px;
+                        height: 200px;
+                        border-radius: 50%;
+                        overflow: hidden;
+                        background-size: cover;
+                        margin-bottom: 0.5rem;
+
+                        &:hover {
+                            border: 3px solid $themeColor;
+                        }
+                    }
+
+                    p {
+                        font-size: 1.2rem;
+                        color: black;
+                        text-align: center;
                     }
                 }
             }
