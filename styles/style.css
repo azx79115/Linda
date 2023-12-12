@@ -70,7 +70,7 @@ body main section.background-img {
   background-size: cover;
   background-position: center;
   transition: all 0.75s ease;
-  position: relative;
+  margin: auto;
   z-index: 0;
   display: flex;
   justify-content: center;
@@ -86,6 +86,32 @@ body main section.background-img div.filter {
   z-index: -1;
 }
 body main section.background-img h3 {
+  color: white;
+  font-size: 2.5rem;
+  text-align: center;
+}
+body main section.linda-img {
+  height: 70vh;
+  width: 90vh;
+  background-image: url("../images/linda.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main section.linda-img div.filter {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  min-height: 70vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+body main section.linda-img h3 {
   color: white;
   font-size: 2.5rem;
   text-align: center;
@@ -188,20 +214,99 @@ body footer section.links a img {
   width: 5vh;
   margin: 0rem 1rem;
 }
+body footer .toTop-arrow {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 33%;
+  opacity: 0.6;
+  background: #000;
+  cursor: pointer;
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  display: none;
+  z-index: 10;
+}
+body footer .toTop-arrow::before,
+body footer .toTop-arrow::after {
+  width: 18px;
+  height: 5px;
+  border-radius: 3px;
+  background: rgb(243, 240, 236);
+  position: absolute;
+  content: "";
+}
+body footer .toTop-arrow::before {
+  transform: rotate(-45deg) translate(0, -50%);
+  left: 0.5rem;
+}
+body footer .toTop-arrow::after {
+  transform: rotate(45deg) translate(0, -50%);
+  right: 0.5rem;
+}
+body footer .toTop-arrow:focus {
+  outline: none;
+}
 
 @media screen and (max-width: 700px) {
+  body header {
+    position: static;
+  }
   body header section.logo {
     flex-direction: column;
   }
   body header section.logo img {
-    width: 50vw;
-    height: 50vw;
+    width: 15vw;
+    height: 15vw;
   }
   body header nav ul {
     flex-direction: column;
   }
   body header nav ul li {
     padding: 0.5rem 0.25rem;
+  }
+  body main section.number h3 {
+    display: flex;
+    flex-direction: column;
+  }
+  body footer .toTop-arrow {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border-radius: 33%;
+    opacity: 0.6;
+    background: #000;
+    cursor: pointer;
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    display: none;
+    z-index: 10;
+  }
+  body footer .toTop-arrow::before,
+  body footer .toTop-arrow::after {
+    width: 18px;
+    height: 5px;
+    border-radius: 3px;
+    background: #f90;
+    position: absolute;
+    content: "";
+  }
+  body footer .toTop-arrow::before {
+    transform: rotate(-45deg) translate(0, -50%);
+    left: 0.5rem;
+  }
+  body footer .toTop-arrow::after {
+    transform: rotate(45deg) translate(0, -50%);
+    right: 0.5rem;
+  }
+  body footer .toTop-arrow:focus {
+    outline: none;
   }
 }
 /* width */
