@@ -252,17 +252,22 @@ body main section.google-map iframe {
   height: 40vh;
 }
 body main section.number {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 10rem;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  max-width: 400px;
 }
 body main section.number h3 {
-  margin: 1rem;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 1.2em;
 }
 body main section.number img {
-  width: 10rem;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
 }
 body footer {
   display: flex;

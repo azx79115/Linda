@@ -295,18 +295,23 @@ body {
         }
 
         section.number {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin: 10rem;
+            text-align: center; // 確保文字居中
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // 添加輕微的陰影效果
+            border-radius: 10px; // 圓角邊框
+            max-width: 400px; // 最大寬度限制
 
             h3 {
-                margin: 1rem;
+                margin-top: 10px;
+                margin-bottom: 20px;
+                color: #333; // 文字顏色
+                font-size: 1.2em; // 文字大小
             }
 
             img {
-                width: 10rem;
+                max-width: 100%; // 確保圖片在容器內
+                height: auto; // 自動調整高度以避免失真
+                border-radius: 5px; // 圖片圓角
             }
         }
     }
