@@ -111,20 +111,18 @@
     </footer>
 
     <script>
-        setInterval(() => {
-            let topBackground = document.querySelector('section.background-img');
-            if (topBackground.style.backgroundImage == 'url("./images/大圖1.jpg")') {
-                topBackground.style.backgroundImage = 'url("./images/大圖2.jpg")';
-            } else if (topBackground.style.backgroundImage == 'url("./images/大圖2.jpg")') {
-                topBackground.style.backgroundImage = 'url("./images/大圖3.jpg")';
-            } else if (topBackground.style.backgroundImage == 'url("./images/大圖3.jpg")') {
-                topBackground.style.backgroundImage = 'url("./images/大圖4.jpg")';
-            } else if (topBackground.style.backgroundImage == 'url("./images/大圖4.jpg")') {
-                topBackground.style.backgroundImage = 'url("./images/大圖5.jpg")';
-            } else {
-                topBackground.style.backgroundImage = 'url("./images/大圖1.jpg")';
-            }
-        }, 3000);
+         setInterval(() => {
+                let topBackground = document.querySelector('section.background-img');
+                if (topBackground.style.backgroundImage == 'url("../images/耳腦清心.png")') {
+                    topBackground.style.backgroundImage = 'url("../images/香薰耳燭淨化.png")';
+                } else if (topBackground.style.backgroundImage == 'url("../images/香薰耳燭淨化.png")') {
+                    topBackground.style.backgroundImage = 'url("../images/耳清星光閃閃.png")';
+                } else if (topBackground.style.backgroundImage == 'url("../images/耳清星光閃閃.png")') {
+                    topBackground.style.backgroundImage = 'url("../images/大人初體驗.png")';
+                } else {
+                    topBackground.style.backgroundImage = 'url("../images/耳腦清心.png")';
+                }
+            }, 3000);
 
         $(function () {
             $('#BackTop').click(function () {
